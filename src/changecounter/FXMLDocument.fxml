@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="changecounter.FXMLDocumentController">
+  <children>
+    <Button id="button" layoutX="29.0" layoutY="303.0" onAction="#Compute" prefWidth="199.0" text="Compute" />
+    <Label fx:id="label" layoutX="124.0" layoutY="136.0" minHeight="16.0" minWidth="69.0" />
+    <Label alignment="CENTER" focusTraversable="false" layoutX="23.0" layoutY="14.0" prefHeight="49.0" prefWidth="711.0" text="Change Counter" textAlignment="LEFT" underline="true" wrapText="false">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="23.0" layoutY="63.0" prefHeight="32.0" prefWidth="711.0" text="Enter the number of each coin type and hit, Compute:">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="21.0" layoutY="121.0" text="Quarters:">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="21.0" layoutY="160.0" text="Dimes:" />
+    <Label font="$x1" layoutX="21.0" layoutY="200.0" text="Nickels:" />
+    <Label font="$x1" layoutX="21.0" layoutY="246.0" text="Pennies" />
+    <TextField fx:id="QuartersTextField" layoutX="124.0" layoutY="120.0" prefWidth="104.0" />
+    <TextField id="QuartersTextField" fx:id="DimesTextField" layoutX="124.0" layoutY="160.0" prefWidth="104.0" />
+    <TextField id="QuartersTextField" fx:id="NickelsTextField" layoutX="124.0" layoutY="200.0" prefWidth="104.0" />
+    <TextField id="QuartersTextField" fx:id="PenniesTextField" layoutX="124.0" layoutY="245.0" prefWidth="104.0" />
+    <Label id="label" layoutX="564.0" layoutY="134.0" minHeight="16.0" minWidth="69.0" />
+    <Label font="$x1" layoutX="400.0" layoutY="119.0" text="Quarters Value: $" />
+    <Label font="$x1" layoutX="421.0" layoutY="158.0" text="Dimes Value: $" />
+    <Label font="$x1" layoutX="413.0" layoutY="195.0" text="Nickels Value: $" />
+    <Label font="$x1" layoutX="408.0" layoutY="243.0" text="Pennies Value: $" />
+    <TextField id="QuartersTextField" fx:id="QuartersValueTextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="564.0" layoutY="118.0" prefWidth="104.0" text="0.00" visible="true" />
+    <TextField id="QuartersTextField" fx:id="dimesValueTextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="564.0" layoutY="158.0" prefWidth="104.0" text="0.00" />
+    <TextField id="QuartersTextField" fx:id="nickelsValueTextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="564.0" layoutY="198.0" prefWidth="104.0" text="0.00" />
+    <TextField id="QuartersTextField" fx:id="penniesValueTextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="564.0" layoutY="243.0" prefWidth="104.0" text="0.00" />
+    <Label font="$x1" layoutX="353.0" layoutY="303.0" prefWidth="199.0" text="Total Change value:: $" />
+    <TextField fx:id="GrandTotal" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="564.0" layoutY="305.0" prefHeight="32.0" prefWidth="104.0" text="00.00" />
+    <Label fx:id="exceptionHandling" layoutX="23.0" layoutY="357.0" text="" />
+  </children>
+</AnchorPane>
